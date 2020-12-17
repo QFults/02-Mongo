@@ -1,0 +1,25 @@
+{
+  "name": "02-Mongo",
+  "version": "1.0.0",
+  "description": "- Intro to Mongoose\r - Basic Mongoose CRUD\r - Mongoose Data Associations",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/QFults/02-Mongo.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/QFults/02-Mongo/issues"
+  },
+  "homepage": "https://github.com/QFults/02-Mongo#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.11.8"
+  }
+}
