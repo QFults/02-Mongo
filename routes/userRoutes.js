@@ -8,6 +8,20 @@ router.get('/users', (req, res) => {
     .catch(err => console.log(err))
 })
 
+router.get('/user/:id', (req, res) => {
+  User.findById(req.params.id)
+    .populate('items')
+    .then(user => res.json(user))
+    .catch(err => console.log(err))
+})
+
+router.get('/users/:username', (req, res) => {
+  User.findOne({ username: req.params.username })
+    .populate('items')
+    .then(user => res.json(user))
+    .catch(err => console.log(err))
+})
+
 router.post('/users', (req, res) => {
   User.create(req.body)
     .then(user => res.json(user))
